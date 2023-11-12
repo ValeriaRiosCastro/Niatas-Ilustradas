@@ -1,0 +1,40 @@
+/* Colors */
+$color-title: palevioletred;
+$color-subtitle: rgb(221, 48, 106);
+$color-text: rgb(0, 0, 0);
+$color-background: black;
+$color-accent: antiquewhite;
+$use-dark-mode: true;
+
+/* Fonts */
+$font-title: 'Quicksand', cursive;
+$font-text: 'Montserrat', cursive;
+$font-brand: 'Gabarito', cursive;
+
+/* Spacing and Sizes */
+$spacing-small: 5px;
+$spacing-medium: 10px;
+$spacing-large: 20px; 
+$border-radius: 10px;
+$image-width: 150px;
+$image-height: auto;
+
+/* Container Sizes */
+$container-width: 1400px; 
+
+/* Background Images */
+$image-header: url("../assets/img/header1.jpeg");
+
+/* Other */
+$max-height-main: calc(100vh - 150px);
+
+/* Navbar */
+$navbar-background: rgb(255, 213, 236);
+
+/* Button */
+$button-pink: rgb(221, 48, 106);
+$button-background: rgb(221, 48, 106);
+
+/* Breakpoints */
+$breakpoint-small: 991px;
+$breakpoint-large: 992px;

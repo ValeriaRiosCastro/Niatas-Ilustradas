@@ -1,0 +1,32 @@
+@mixin font-styles($font-family, $font-size, $font-weight) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: $spacing-large;
+
+    @include font-styles($font-title, 1rem, bold);
+
+    .nav-link {
+        @include font-styles($font-title, 1rem, bold);
+    }
+
+    .navbar {
+        @if $use-dark-mode {
+            background-color: black;
+        } @else {
+            background-color: $navbar-background;
+        }
+
+        background-image: url("../assets/img/Header/header1.jpeg");
+        background-size: cover;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,14 @@
+/* Main productos */
+.container {
+    padding: 0 !important;
+}
+
+.card-product {
+    margin: $spacing-medium;
+    width: 10rem;
+    max-width: 100%;
+}
+
+.card-product .card-body {
+    height: 7rem;
+}

@@ -1,0 +1,25 @@
+/* Main Contacto */
+form {
+    font-family: $font-text;
+    padding: $spacing-small;
+    margin-left: $spacing-medium;
+    display: block;
+}
+
+.formulario {
+    display: block;
+    margin-bottom: $spacing-medium;
+    margin-top: $spacing-medium;
+}
+
+.fatherForms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text-container {
+    width: 800px;
+}

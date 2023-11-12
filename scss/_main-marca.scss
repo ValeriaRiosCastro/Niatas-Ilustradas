@@ -1,0 +1,25 @@
+/* Main Marca */
+.about-us {
+    margin-top: 20px;
+}
+
+.col {
+    text-align: center; 
+}
+
+.col img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+}
+.container-marca{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%; /* Ensure the container takes the full width */
+    margin-bottom: 50px;
+}

@@ -1,0 +1,20 @@
+/* Hover effect */
+.img-hover {
+    transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);
+    color: $color-background;
+}
+
+.img-hover-radius {
+    transition: transform 0.3s ease;
+}
+
+.img-hover-radius:hover {
+    transform: scale(1.1);
+    background-color: $color-title;
+    color: $color-background;
+    border-radius: $border-radius;
+}
