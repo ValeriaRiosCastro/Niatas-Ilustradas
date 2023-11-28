@@ -1,23 +1,13 @@
 /* Colors */
 /* Fonts */
 /* Spacing and Sizes */
-/* Small padding/margin */
-/* Medium padding/margin */
-/* Large padding/margin */
-/* Border radius */
-/* Image width */
-/* Image height */
 /* Container Sizes */
-/* Container width */
 /* Background Images */
-/* Header background image */
 /* Other */
-/* Maximum height for the main content */
 /* Navbar */
 /* Button */
 /* Breakpoints */
-/* Small screen breakpoint */
-/* Large screen breakpoint */
+/* Card Height */
 @import url("https://fonts.googleapis.com/css2?family=Chewy&family=Gabarito:wght@400;700&family=Montserrat:wght@300&family=Quicksand:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chewy&family=Gabarito:wght@400;700&family=Montserrat:wght@300&display=swap");
 h1 {
@@ -56,34 +46,58 @@ main {
   flex: 1;
 }
 
-.logo {
-  height: 5%;
-  width: 10%;
-  margin-right: 10px;
-  display: flex;
-  align-items: flex-start;
+a {
+  color: rgb(221, 48, 106);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
+a:hover {
+  color: orange;
+}
+
+.logo {
+  height: 50px;
+  width: 100px;
+  margin-right: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .img-size {
+    max-width: 100%;
+    height: auto;
+  }
+}
 header {
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "Quicksand", cursive; /* Updated font variable */
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
   height: auto;
-  margin-bottom: 20px; /* Updated spacing variable */
+  margin-bottom: 20px;
+  font-family: "Quicksand", cursive;
+  font-size: 1rem;
+  font-weight: bold;
 }
-
-.nav-link {
-  font-family: "Quicksand", cursive; /* Updated font variable */
+header .nav-link {
+  font-family: "Quicksand", cursive;
+  font-size: 1rem;
+  font-weight: bold;
 }
-
-.navbar {
-  background-color: rgb(255, 213, 236); /* Updated color variable */
+header .navbar {
+  background-color: black;
   background-image: url("../assets/img/Header/header1.jpeg");
   background-size: cover;
   align-items: center;
@@ -109,7 +123,7 @@ footer {
   margin-bottom: 10px;
 }
 .social-icons p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .social-icons ul.social-list {
   list-style: none;
@@ -146,6 +160,7 @@ footer {
   display: inline;
   text-decoration: none;
   align-items: center;
+  margin-right: 10px;
 }
 
 .copyright {
@@ -159,6 +174,27 @@ footer {
   color: antiquewhite;
   justify-content: space-evenly;
   font-family: "Quicksand", cursive;
+}
+
+/* Hover effect */
+.img-hover {
+  transition: transform 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.img-hover-radius {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-radius:hover {
+  transform: scale(1.1);
+  background-color: palevioletred;
+  color: black;
+  border-radius: 10px;
 }
 
 /* Index Main*/
@@ -204,8 +240,73 @@ footer {
   align-content: center;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 100%; /* Ensure the container takes the full width */
+  max-width: 100%;
   margin-bottom: 50px;
+}
+
+.pink-text {
+  color: rgb(221, 48, 106);
+  font-weight: bolder;
+}
+
+.orange-text {
+  color: orange;
+  font-weight: bolder;
+}
+
+.green-text {
+  color: rgb(71, 211, 71);
+  font-weight: bolder;
+}
+
+/* Main productos */
+.container {
+  padding: 0 !important;
+}
+
+.card-product {
+  margin: 10px;
+  object-fit: fill;
+  max-height: fit-content;
+  width: 100%;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-image {
+  height: 200px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  color: palevioletred;
+  font-weight: bold;
+}
+
+.accordion-button {
+  background-color: #f8f9fa !important;
+  color: palevioletred !important;
+  font-weight: bold;
+}
+.accordion-button:hover {
+  background-color: #faeaef !important;
+}
+.accordion-button:focus, .accordion-button:active {
+  background-color: #f8f9fa !important;
+  color: rgb(221, 48, 106) !important;
+}
+
+/* Main collabs */
+.img-size {
+  width: 1000px;
 }
 
 /* Main Contacto */
@@ -232,47 +333,6 @@ form {
 
 .text-container {
   width: 800px;
-}
-
-/* Main productos */
-.container {
-  padding: 0 !important;
-}
-
-.card-product {
-  margin: 10px;
-  width: 10rem;
-  max-width: 100%;
-}
-
-.card-product .card-body {
-  height: 7rem;
-}
-
-/* Hover effect */
-.img-hover {
-  transition: transform 0.3s ease;
-}
-
-.img-hover:hover {
-  transform: scale(1.1);
-  color: black;
-}
-
-.img-hover-radius {
-  transition: transform 0.3s ease;
-}
-
-.img-hover-radius:hover {
-  transform: scale(1.1);
-  background-color: palevioletred;
-  color: black;
-  border-radius: 10px;
-}
-
-/* Main collabs */
-.img-size {
-  width: 1000px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

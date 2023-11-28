@@ -17,7 +17,7 @@ footer {
     margin-bottom: $spacing-medium;
 
     p {
-        margin-bottom: $spacing-small;
+        margin-bottom: $spacing-medium;
     }
 
     ul.social-list {
@@ -58,6 +58,7 @@ footer {
     display: inline;
     text-decoration: none;
     align-items: center;
+    margin-right: 10px;
 }
 
 .copyright {

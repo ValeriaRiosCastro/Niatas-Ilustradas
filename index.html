@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ñatas Ilustradas</title>
+  <meta name="description" content="¡Bienvenido a Ñatas Ilustradas! Descubre nuestros productos, desde cuadros y cases para celulares hasta moda y llaveros. ¡Contáctanos para obtener tus ilustraciones personalizadas!">
+  <meta property="og:title" content="Ñatas Ilustradas">
+  <meta property="og:description" content="¡Bienvenido a Ñatas Ilustradas! Descubre nuestros productos, desde cuadros y cases para celulares hasta moda y llaveros. ¡Contáctanos para obtener tus ilustraciones personalizadas!">
+  <meta property="og:image" content="./assets/img/Logo/logo-ñatas.png">
+  <meta property="og:url" content="https://www.yourwebsite.com">
+  <meta property="og:type" content="website">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.22.0/font/bootstrap-icons.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/estilos.css">
@@ -18,14 +21,20 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center">
+      <div class="container-fluid align-items-center">
+        <div class="row">
+          <div class="col-6">
+        <a class="navbar-brand" href="../index.html">
           <img src="./assets/img/Logo/logo-ñatas.png" alt="Logo" class="logo">
         </a>
+      </div>
+      <div class="col-6 text-end">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+      </div>
+      </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -52,7 +61,7 @@
   </header>
   <main>
     <section class="index-banner">
-      <img class="img-fluid img-hover" src="./assets/img/Banner/banner.png" alt="banner">
+      <img class="img-fluid img-hover" src="./assets/img/Banner/Banner2.jpg" alt="banner">
     </section>
     <section class="releases d-flex justify-content-center align-items-center">
       <div class="container">
@@ -62,14 +71,13 @@
             <div class="card mb-3 card2" style="max-width: 540px; min-height:300px;">
               <div class="row g-0">
                 <div class="col-md-4 release-video">
-                  <img src="./assets/video/new-release-case.png" class="img-fluid rounded-start" alt="cases">
+                  <img src="./assets/video/new-release-case.png" class="img-fluid rounded-start card-image" alt="cases">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Cases para celulares</h5>
                     <p class="card-text">Tenemos una gran variedad de diseños para todos los modelos, ¡Anímate a pedir
                       el tuyo!</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
@@ -79,14 +87,12 @@
             <div class="card mb-3 card1" style="max-width: 540px; min-height:300px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="./assets/img/Screenshots/prints7.png" class="img-fluid rounded-start" alt="prints">
+                  <img src="./assets/img/Screenshots/prints7.png" class="img-fluid rounded-start card-image" alt="prints">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Prints y Stickers</h5>
-                    <p class="card-text">Siempre estamos produciendo nuevos diseños en diferentes materiales y
-                      diferentes tamaños, ¡pregunta por los que más te gusten!</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text">Siempre estamos produciendo nuevos diseños, ¡pregunta por los que más te gusten!</p>
                   </div>
                 </div>
               </div>
@@ -96,14 +102,13 @@
             <div class="card mb-3 card3" style="max-width: 540px; min-height:300px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="./assets/img/Productos/Llaveros/image00004.jpeg" class="img-fluid rounded-start"
+                  <img src="./assets/img/Productos/Llaveros/image00004.jpeg" class="img-fluid rounded-start card-image"
                     alt="llaveros">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Llaveros</h5>
                     <p class="card-text">Hermosos llaveros, aprovecha y pregunta por el tuyo porque se van ¡volando!</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
@@ -135,6 +140,9 @@
     </div>
     <p class="copyright">©Melissa Urrea</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
